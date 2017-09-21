@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01弹窗插件</title>
+	<style>
+		.box{display: none}
+	</style>
+	<script src="lib/xquery.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			$('.box').show();
+
+			$('.box').on('click',function(){
+				console.log(this.innerHTML)
+			});
+
+
+			$('.box').css('font-size');//16px;
+			$('.box').css('font-size','16rem');
+			$('.box').css('font-size',0.5);
+		})
+	</script>
+</head>
+<body>
+	<span class="box">1111</span><span class="box">2222</span>
+	<div class="box">3333</div><span class="box">444</span>
+</body>
+</html>
