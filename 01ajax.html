@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>足球解说</title>
+	<script src="lib/xajax.js"></script>
+	<script>
+		// new Ajax({})
+		xajax({
+			// type:'post',
+			url:'../api/football.php',
+			success:function(data){
+
+			}
+		});
+
+		xajax.post('../api/football.php',function(data){
+			//用户处理数据代码
+		});
+
+
+		xajax({
+			url:'../api/football.php',
+		}).then(function(data){
+			//用户处理数据代码
+		})
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
