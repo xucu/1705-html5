@@ -1,0 +1,4 @@
+.xzoom{position:relative;}
+.xzoom .minzoom{position: absolute;width:30px;height:30px;border:1px solid #fc0;background-color:#ff0;background-color: rgba(255,255,0,.3);filter:alpha(Opacity=30);}
+.xzoom-big{position: absolute;width:200px;height:300px;overflow:hidden;}
+.xzoom-big img{position: absolute;left:0;right:0;}
